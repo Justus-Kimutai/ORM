@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 img{
     max-width: 100%;
@@ -9,6 +10,14 @@ img{
 .container{
     margin: 0 auto;
     width: 90%;
+}
+button{
+    transition: 2s;
+    
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px 1px  white;
 }
 header,.intro{
     background: rgb(0, 18, 58);
@@ -42,5 +51,84 @@ header,.intro{
     align-items: center;
     justify-content: space-between;
     color: #e4e4e4;
-    padding: 5em 0;
+    padding: 0 0 2em 0;
+}
+.intro_section{
+    width: 100%;
+}
+
+/* min_section */
+.section_title{
+    text-align: center;
+}
+
+.intro_btn{
+    background: rgb(71, 168, 228);
+    border: none;
+    padding: .25em .75em;
+    border-radius: 5px;
+}
+.min_section{
+    padding: 2em 5em;
+}
+.min{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.min_row .img{
+    border: 2px solid rgb(71, 168, 228);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.min_row .img img{
+    border-radius: 10px;
+}
+
+.quote_section{
+    background: url(images/TheWay.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em 0;
+    color: #e4e4e4;
+}
+.quote{
+    margin:2em 5em;
+}
+.quote p{
+    text-align: right;
+}
+
+
+.cta_btn{
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: .25em 1em;
+}
+
+
+.cta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f2f2f2;
+
+    background: rgb(0, 163, 217);
+    margin: 2em 5em;
+    padding: 2em;
+    border-radius: 10px;
+}
+.cta h2,p{
+    margin: 0;
+}
+.footer_section{
+    background: rgb(0, 18, 58);
+    text-align: center;
+    color: #d7d7d7;
+    padding: 2em 0;
 }
